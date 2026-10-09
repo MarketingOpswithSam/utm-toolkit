@@ -40,6 +40,10 @@ node utm.mjs check "https://example.com/?utm_source=LinkedIn&utm_medium=Social%2
 
 `build` lowercases and hyphenates what you give it, then refuses to print a link that still breaks the rules. `check` lists every problem and exits 1, so you can drop it into a QA step before a campaign goes out.
 
+## Why these rules
+
+GA4 treats UTM values as case sensitive and sorts traffic into channels using default source and medium rules. The full reasoning, with sources, is in [The UTM naming rule that stops your GA4 report lying](https://marketingopswithsam.com/blog/utm-naming-convention-ga4).
+
 ## Make it yours
 
 The approved mediums live in one array at the top of `utm.mjs`. Edit it to match your channels, and keep the list short. Every extra value is another row in your report.

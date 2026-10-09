@@ -18,7 +18,13 @@ Rules that apply everywhere: lowercase only, hyphens instead of spaces, no speci
 
 ## Use it
 
-Needs Node 18 or newer. No install.
+Needs Node 18 or newer. Run it without installing anything:
+
+```bash
+npx github:MarketingOpswithSam/utm-toolkit build --url https://example.com/offer --source linkedin --medium social --campaign 2026-10-launch
+```
+
+Or clone it to edit the rules:
 
 ```bash
 git clone https://github.com/MarketingOpswithSam/utm-toolkit.git
@@ -37,6 +43,12 @@ node utm.mjs check "https://example.com/?utm_source=LinkedIn&utm_medium=Social%2
 ## Make it yours
 
 The approved mediums live in one array at the top of `utm.mjs`. Edit it to match your channels, and keep the list short. Every extra value is another row in your report.
+
+## Tests
+
+```bash
+npm test
+```
 
 ## Licence
 

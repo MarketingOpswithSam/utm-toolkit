@@ -1,0 +1,15 @@
+{
+  "name": "utm-toolkit",
+  "version": "1.0.0",
+  "description": "Build and validate UTM links against one naming convention. Zero dependencies.",
+  "type": "module",
+  "bin": { "utm-toolkit": "utm.mjs" },
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=18" },
+  "keywords": ["utm","analytics","attribution"],
+  "license": "MIT",
+  "author": "Marketing Ops with Sam (https://marketingopswithsam.com)",
+  "homepage": "https://github.com/MarketingOpswithSam/utm-toolkit#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/MarketingOpswithSam/utm-toolkit.git" },
+  "bugs": { "url": "https://github.com/MarketingOpswithSam/utm-toolkit/issues" }
+}
